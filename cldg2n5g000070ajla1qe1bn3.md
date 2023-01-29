@@ -29,26 +29,26 @@ I view R4DS as a great benchmark for any language attempting to do Data Science.
 
 ## Why Elixir for Data Science?
 
-1) Functional In Nature
+1. Functional In Nature
     
 
 If you remember back to your Algebra days, you came across the concept of a function. That function would do some transformation a (typically to x) and save it to a variable (typically y) and looked something like this y=f(x). What makes functional languages special is that given the same input, the output will always be the same. While you may be thinking "duh", this is not the case with many programming languages.
 
-2) Clarity in Transforming Data
+1. Clarity in Transforming Data
     
 
 Elixir uses functions to take data and transform it through multiple steps for a desired outcome, model, etc… IMHO, this is what makes the [Tidyverse](https://www.tidyverse.org/) for R so wonderful. Imagine a whole language that works like the Tidyverse!
 
-3) A Tool Worth Using
+1. A Tool Worth Using
     
 
 If you don’t enjoy a tool, then you’ll never use it…regardless of how many “obvious” benefits. According to the Stack Overflow 2022 survey below, Elixir is the 2nd most loved language. The main point here is that the people using Elixir actually enjoy working in it.
 
 Stack Overflow 2022 Survey Results:
 
-![](https://images.amplenote.com/f9f00e4a-724c-11ed-968b-121d5d4535e4/fe1408c0-57c4-4c3d-a253-3190f6ee53c7.png align="left")
+![](https://user-images.githubusercontent.com/28072958/215350323-2bc8babd-3158-4a82-b18e-88a9c81eb08e.png align="left")
 
-4) A Clear Path to Production
+1. A Clear Path to Production
     
 
 Building models on your machine is sweet, but what about when you’re ready to go live? How much additional stuff is needed to turn your Python or R code into something that is production ready?
@@ -70,11 +70,11 @@ What additional technologies will you have to include? Is the additional complex
 
 In his book, [Elixir In Action](https://www.manning.com/books/elixir-in-action-second-edition), [Sasa Juric](https://twitter.com/sasajuric?lang=en) showed, in the table below, that Elixir (built on top of Erlang) gives you all of these things for free!
 
-![](https://images.amplenote.com/f9f00e4a-724c-11ed-968b-121d5d4535e4/ab158ae6-ec6f-4d49-aa7b-a1cab8d90b06.jpg align="left")
+![](https://user-images.githubusercontent.com/28072958/215350348-36d0cb43-8232-487a-a3ae-29dd9219c980.jpg align="left")
 
 Elixir already has a production-ready web framework named Phoenix. Do you want to use your model in your website? Done. Do you want to deploy your model results as an API for others to consume? No problem. And the cool part is, Phoenix is *The Most Loved Web Framework* according to the Stack Overflow 2022 Survey (shown below).
 
-![](https://images.amplenote.com/f9f00e4a-724c-11ed-968b-121d5d4535e4/0894de87-340a-46ed-811e-8b3940ff0630.png align="left")
+![](https://user-images.githubusercontent.com/28072958/215350344-4365788f-5d3b-4bbc-91f6-250ad66bfc00.png align="left")
 
 Elixir is turning itself into a one-stop-shop for all your Data Science needs.
 
@@ -85,19 +85,19 @@ If you’re still with me, let's get the setup and installation out of the way. 
 1. If you have access to a computer, the easiest way to get up and going is by selecting the Mac or Windows option and downloading the appropriate software for your computer. This requires zero setup. Once downloaded, simply install Livebook, and you’re up and running. That's it!
     
 
-![](https://images.amplenote.com/f9f00e4a-724c-11ed-968b-121d5d4535e4/2d7fab7f-ae38-4d0f-b200-85172263ab0f.png align="left")
+![](https://user-images.githubusercontent.com/28072958/215350356-dfaf7e40-5aa6-4c21-9017-5656d2a27293.png align="left")
 
-2. If you want to work in the cloud, select the Fly.io option. This requires setting up an account and a few odds and ends. You should be up and running in under 5 minutes. No, I'm not lying. I did have a cloud version of Livebook going in under 5 minutes.
+1. If you want to work in the cloud, select the Fly.io option. This requires setting up an account and a few odds and ends. You should be up and running in under 5 minutes. No, I'm not lying. I did have a cloud version of Livebook going in under 5 minutes.
     
 
-![](https://images.amplenote.com/f9f00e4a-724c-11ed-968b-121d5d4535e4/991d7f06-67e7-4b9f-8a19-5b5a187b6361.png align="left")
+![](https://user-images.githubusercontent.com/28072958/215350366-2f4ee115-973c-4aed-912a-0c6c37d95129.png align="left")
 
-3. If you'd like to manually install all the parts yourself, then you'll need to install Erlang, Elixir and run Escript to install Livebook. You can find the directions [here](https://github.com/livebook-dev/livebook#installation).
+1. If you'd like to manually install all the parts yourself, then you'll need to install Erlang, Elixir and run Escript to install Livebook. You can find the directions [here](https://github.com/livebook-dev/livebook#installation).
     
 
 Finally, let's install the packages you'll need:
 
-```plaintext
+```ruby
 Mix.install([
   {:vega_lite, "~> 0.1.5"},
   {:kino, "~> 0.6.2"},
